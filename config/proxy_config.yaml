@@ -1,0 +1,9 @@
+# - from: "*.google.*"
+#   proxy: 127.0.0.1:7897
+#   type: sokcs5
+# - from: "*.waves.com"
+#   proxy: 127.0.0.1:7897
+#   type: socks5
+# - from: "*.vrchat.cloud"
+#   proxy: 127.0.0.1:7897
+#   type: socks5

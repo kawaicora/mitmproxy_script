@@ -1,0 +1,4 @@
+- host: www.baidu.com
+  ip: 1.1.1.1
+- host: "*.google.com"
+  ip: 1.1.1.1

@@ -1,0 +1,4 @@
+# 
+- path: /path1
+  to: 127.0.0.1:60080
+  http_to_https: true
