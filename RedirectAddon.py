@@ -69,8 +69,9 @@ class HostRedirect:
             for rule in self.config:
                 pattern = re.escape(rule['from']).replace(r'\*', '.*')
                 if re.match(pattern, flow.request.pretty_host):
-                    if rule['http_to_https']:
-                        flow.request.scheme = 'https'
+                    if rule['https_to_http']:
+                        flow.request.scheme = 'http'
+                    
                     flow.request.host = rule['to'].split(':')[0]
                     flow.request.port = int(rule['to'].split(':')[1])
                     break

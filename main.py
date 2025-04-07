@@ -39,8 +39,8 @@ async def start(mode=['regular', 'socks5',"wireguard"],listen_host:str="0.0.0.0"
     m = WebMaster(opts)
     
     # Add custom addons as needed
-    m.addons.add(ProxyAccess('config/proxy_config.yaml'))
-    # m.addons.add(HostRedirect('config/host_redirect_config.yaml'))
+    # m.addons.add(ProxyAccess('config/proxy_config.yaml'))
+    m.addons.add(HostRedirect('config/host_redirect_config.yaml'))
     # m.addons.add(PathRedirect('config/path_redirect_config.yaml'))
     # m.addons.add(TCPUDPRedirect('config/tcp_udp_redirect_config.yaml'))
     
